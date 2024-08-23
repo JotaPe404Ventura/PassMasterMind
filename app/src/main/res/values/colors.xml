@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8f94fb</color>
+    <color name="colorPrimaryDark">#8f94fb</color>
+    <color name="colorAccent">#8F94FB</color>
+    <color name="colorStrongPassword">#00FF00</color> <!-- Cor para senhas fortes (verde) -->
+    <color name="colorMediumPassword">#FFFF00</color> <!-- Cor para senhas médias (amarelo) -->
+    <color name="colorWeakPassword">#FF0000</color>
+</resources>

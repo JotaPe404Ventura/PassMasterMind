@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2a30"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/showPassword"
+        android:layout_width="385dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_corner_view"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ccc"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/setUppercase"
+        android:layout_width="385dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_corner_view"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLength"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+        android:id="@+id/setLowercase"
+        android:layout_width="385dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner_view"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setUppercase"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+        android:id="@+id/setSymbols"
+        android:layout_width="385dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner_view"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setNumbers"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+        android:id="@+id/setNumbers"
+        android:layout_width="385dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner_view"
+        android:gravity="right|center_vertical"
+        android:padding="20dp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setLowercase"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/btnSetRandomString"
+        android:layout_width="385dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="524dp"
+        android:background="@drawable/gradient_background"
+        android:text="GENERATE PASSWORD"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showPassword" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include UPPERCASE"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/setUppercase"
+        app:layout_constraintEnd_toEndOf="@+id/setUppercase"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="@+id/setUppercase"
+        app:layout_constraintTop_toTopOf="@+id/setUppercase"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include lowercase"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/setLowercase"
+        app:layout_constraintEnd_toEndOf="@+id/setLowercase"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="@+id/setLowercase"
+        app:layout_constraintTop_toTopOf="@+id/setLowercase"
+        app:layout_constraintVertical_bias="0.565" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Numb3r5"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/setNumbers"
+        app:layout_constraintEnd_toEndOf="@+id/setNumbers"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="@+id/setNumbers"
+        app:layout_constraintTop_toTopOf="@+id/setNumbers"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include $ymb@ls"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/setSymbols"
+        app:layout_constraintEnd_toEndOf="@+id/setSymbols"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@+id/setSymbols"
+        app:layout_constraintTop_toTopOf="@+id/setSymbols"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <SeekBar
+        android:id="@+id/passwordLength"
+        android:layout_width="385dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_corner_view"
+        android:padding="20dp"
+        android:min="8"
+        android:max="24"
+        android:progress="12"
+        android:theme="@style/ScrollTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showPassword" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:textColor="#ccc"
+        app:layout_constraintBottom_toTopOf="@+id/setUppercase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLength"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ccc"
+        android:text="LENGTH:"
+        app:layout_constraintBottom_toTopOf="@+id/passwordLength"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showPassword"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="385dp"
+        android:layout_height="70dp"
+        android:text="Pass MM"
+        android:padding="10dp"
+        android:background="@drawable/textlines"
+        android:textColor="#ccc"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/showPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <TextView
+        android:id="@+id/showLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/passwordLength"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/showPassword"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <TextView
+        android:id="@+id/passwordStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/passwordLength"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toEndOf="@+id/showLength"
+        app:layout_constraintTop_toBottomOf="@+id/showPassword"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <ImageView
+        android:id="@+id/passwordCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/showPassword"
+        app:layout_constraintEnd_toEndOf="@+id/showPassword"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="@+id/showPassword"
+        app:layout_constraintTop_toTopOf="@+id/showPassword"
+        app:srcCompat="@drawable/ic_copy"
+        app:tint="@color/colorAccent"
+        tools:srcCompat="@drawable/ic_copy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#8f94fb</item>
+    </style>
+
+    <style name="ScrollTheme" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#8f94fb</item>
+        <item name="android:progressTint">#4e54c8</item>
+        <item name="android:thumbTint">#8f94fb</item>
+    </style>
+
+</resources>
